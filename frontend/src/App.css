@@ -1,0 +1,52 @@
+:root {
+  --primary-red: #cd0909;
+  --primary-brown: #cec7b5;
+  --secondary-brown: #e0dbd4;
+  --complimentary-brown: #ebe4d5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url('images/background.png') no-repeat;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--primary-red);
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Preloader Styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .5s .5s ease;
+  -moz-transition: all .5s .5s ease;
+  transition: all .5s .2s ease;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: -30px auto auto;
+}
+
+body.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+}
