@@ -12,13 +12,8 @@
   margin: 0;
 }
 body{
-  background: linear-gradient(#2d3436, #d3d3d3);
+  background: var(--primary-brown);
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  color: #777;
-  font-weight: 400;
-  letter-spacing: -0.2px;
   position: relative;
   overflow-x: hidden;
 }
