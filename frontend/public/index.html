@@ -10,6 +10,9 @@
               content='Web site created using create-react-app'
       />
       <link rel='apple-touch-icon' href='%PUBLIC_URL%/logo.jpeg'/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
       <!-- Elegant Font Icons CSS -->
       <link rel='stylesheet' href='css/elegant-font-icons.css'>
       <!-- Elegant Line Icons CSS -->
@@ -18,8 +21,6 @@
       <link rel='stylesheet' href='css/themify-icons.css'>
       <!-- Barber Icons CSS -->
       <link rel='stylesheet' href='css/barber-icons.css'>
-      <!-- Bootstrap CSS -->
-      <!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
       <!-- animate CSS -->
       <link rel='stylesheet' href='css/animate.min.css'>
       <!-- Venobox CSS -->
@@ -28,17 +29,46 @@
       <link rel='stylesheet' href='css/nice-select.css'>
       <!-- OWL-Carousel CSS -->
       <link rel='stylesheet' href='css/owl.carousel.css'>
-      <!-- Slick Nav CSS -->
-      <link rel='stylesheet' href='css/slicknav.min.css'>
-      <!-- Main CSS -->
-      <link rel='stylesheet' href='css/main.css'>
-      <!-- Responsive CSS -->
-      <link rel='stylesheet' href='css/responsive.css'>
       <title>The Awesome Hair Lab</title>
+
+      <style>
+          #preloader{
+              position: fixed;
+              top: 0;
+              left: 0;
+              z-index: 9999;
+              background: #000000;
+              height: 100%;
+              width: 100%;
+              -webkit-transition: all .5s .5s ease;
+              -moz-transition: all .5s .5s ease;
+              transition: all .5s .2s ease;
+          }
+          .loader{
+              position:absolute;
+              top: 50%;
+              left: 0;
+              right: 0;
+              width: 80px;
+              height: 80px;
+              display: block;
+              margin: -30px auto auto;
+          }
+          body.loaded #preloader{
+              opacity: 0;
+              visibility: hidden;
+          }
+      </style>
+
       <script src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+        <div id='preloader' >
+            <div class='loader'>
+                <img src='loading.gif' alt='Bearded Man' />
+            </div>
+        </div>
+    </div>
   </body>
 </html>

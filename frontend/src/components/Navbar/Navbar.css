@@ -1,0 +1,263 @@
+.header-section{
+    background: linear-gradient(#d3d3d3, #2d3436);
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar-fixed-top.header-section{
+    background-color: #222227;
+    -moz-box-shadow: 0 2px 5px rgba(16,16,16,.08);
+    -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.08);
+    box-shadow: 0 2px 5px rgba(16,16,16,.08);
+    height: 80px;
+    border-bottom: 0;
+    padding: 0;
+}
+
+.navbar-fixed-top ul.nav > li > a{
+    color: #ddd;
+}
+.navbar-fixed-top ul.nav > li > a:hover,
+.navbar-fixed-top ul.nav > li > a:focus,
+.navbar-fixed-top ul.nav > li.active > a{
+    color: #000;
+}
+.logo-light,
+.navbar-fixed-top .logo-light,
+.logo-dark,
+.navbar-fixed-top .logo-dark,
+.navbar-fixed-top.header-section,
+.header-section{
+    transition: all 0.3s ease-in-out;
+}
+.navbar{
+    border: medium none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+.navbar-header {
+    padding: 17px 0;
+}
+.navbar-header .brand{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 600;
+    margin-left: 13px;
+    width: 2rem;
+}
+.navbar-header .brand img {
+    width: 2rem;
+}
+.navbar-header .nav-btn{
+    padding: 8px;
+    border-radius: 1px;
+}
+.navbar-header .nav-btn .icon-bar{
+    background-color: #fff;
+    width: 18px;
+}
+.navbar-fixed-top .navbar-header .nav-btn .icon-bar{
+    background-color: #777;
+}
+.navbar-header .nav-btn:hover,
+.navbar-header .nav-btn:focus{
+    opacity: 0.8;
+}
+
+/*Dropdown Style
+==================*/
+#mainmenu li ul{
+    background-color: #222227;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 140%;
+    visibility: hidden;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    z-index: 999;
+}
+#mainmenu li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    top: 100%;
+}
+#mainmenu li ul li{
+    border-bottom: 1px solid #333;
+    display: block;
+    position: relative;
+    padding: 0;
+}
+#mainmenu li ul li:last-child{
+    border: none;
+}
+#mainmenu li ul li a{
+    font-family: 'Russo One', sans-serif;
+    line-height: 45px;
+    display: block;
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: #ddd;
+    text-transform: uppercase;
+    -webkit-transition: color 0.3s ease 0s, padding 0.3s ease 0s;
+    transition: color 0.3s ease 0s, padding 0.3s ease 0s;
+}
+#mainmenu li > ul > li:hover a{
+    background: var(--primary-red);
+    color: #fff;
+}
+#mainmenu li > ul ul{
+    background-color: #fff;
+    left: 200px;
+}
+#mainmenu li > ul li:hover > ul li a{
+    color: #777;
+}
+#mainmenu li ul li:hover > ul{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+#mainmenu li > ul li:hover > ul li > a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+#mainmenu li ul li li a:hover{
+    color: #ffca3f !important;
+}
+/* Nav Menu */
+#navbar{
+    z-index: 999;
+    padding: 0 15px;
+}
+ul.nav{}
+ul.nav > li{
+    position: relative;
+}
+ul.nav > li > a{
+    color: #ddd;
+    font-family: 'Russo One', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 80px;
+    z-index: 1;
+}
+
+ul.nav li.phone{
+    font-size: 14px;
+    font-family: 'Russo One', sans-serif;
+    color: #ddd;
+    font-weight: 600;
+    line-height: 80px;
+    padding-left: 50px;
+}
+ul.nav li.phone i{
+    color: #9e8a78;
+    margin-right: 5px;
+}
+
+ul.nav > li > a:hover,
+ul.nav > li > a:focus,
+ul.nav > li > a.active{
+    background: none;
+    color: #000;
+    opacity: 1;
+}
+.menu-btn{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Header Btn
+===============*/
+.header-btn{
+    margin-left: 10px;
+}
+.header-btn .menu-btn{
+    background-color: #9e8a78;
+    font-family: 'Russo One', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 30px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    margin: 0;
+}
+.header-btn .menu-btn:hover{
+    opacity: 0.8;
+}
+/*Mobile Menu */
+.menu-wrap{
+    position: relative;
+}
+.slicknav_menu {
+    background: none;
+    padding: 4px 0;
+    display:none;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: 1;
+}
+.slicknav_nav {
+    background-color: #fff;
+}
+.slicknav_btn{
+    background-color: transparent;
+    margin: -51px 0 0;
+}
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav .slicknav_row,
+.slicknav_nav a,
+.slicknav_nav a:hover{
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.slicknav_nav .slicknav_row,
+.slicknav_nav a {
+    padding: 10px 15px;
+    margin: 0;
+    color: #777;
+}
+.slicknav_nav a .caret{
+    display: none;
+}
+.slicknav_nav ul{
+    margin: 0;
+}
+.slicknav_nav ul li a{
+    padding-left: 30px;
+    font-size: 12px;
+}
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav a:hover{
+    background-color: transparent;
+    color: #000;
+}
