@@ -13,7 +13,6 @@ function Navbar() {
                     <ul className="nav-menu">
                         <li className="nav-item">
                             <NavLink to="/"
-                                     activeClassName="active"
                                      className="nav-links">
                                 Home
                             </NavLink>
@@ -21,7 +20,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/team"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Our Team
@@ -30,7 +28,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/services"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Services
@@ -39,7 +36,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/look-book"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Look Book
@@ -51,7 +47,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/information"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Information
@@ -60,7 +55,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/contact-us"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Contact Us
@@ -69,7 +63,6 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink
                                 to="/reviews"
-                                activeClassName="active"
                                 className="nav-links"
                             >
                                 Reviews

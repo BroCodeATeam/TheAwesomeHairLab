@@ -1,7 +1,7 @@
 .navbar {
     background-color: #a38560;
-    background-image: linear-gradient(var(--primary-brown)0%, var(--primary-brown-contrast) 85%);
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    background-image: linear-gradient(#d7d7d7 0%, #353535 85%);
+    box-shadow: 0 2px 4px -1px rgba(213,54,48);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -52,8 +52,8 @@
     padding: 0.5rem 1rem;
     height: 100%;
     border-bottom: 3px solid transparent;
-    color: black;
-    text-shadow: 2px 1px white;
+    color: white;
+    text-shadow: 2px 1px black;
 }
 
 .nav-item {
