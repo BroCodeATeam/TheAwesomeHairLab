@@ -38,8 +38,7 @@ export default function Home() {
                             <div className="slider_content">
                                 <h3>Its Not Just a Haircut, Its an Experience.</h3>
                                 <h1>Being a barber is about <br/>taking care of the people.</h1>
-                                <p>Our barbershop is the territory created purely for males who appreciate<br/> premium
-                                    quality, time and flawless look.</p>
+                                <p>Our barbershop is the territory created purely for males who appreciate<br/> premium quality, time and flawless look.</p>
                                 <a href="#" className="default_btn">Make Appointment</a>
                             </div>
                         </div>
