@@ -339,7 +339,7 @@ button{
 
 /* Hero w/ Background Video */
 .hero_section{
-  /*background-image: url("../img/hero-1.jpg");*/
+  background-image: url("./images/hero-1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -577,7 +577,7 @@ button{
   position: relative;
 }
 .book_bg{
-  /*background-image: url(../img/book-bg.jpg);*/
+  background-image: url(./images/book-bg.jpg);
   background-repeat: no-repeat;
   background-position: center left;
   position: absolute;
@@ -587,7 +587,7 @@ button{
   top: 0;
 }
 .map_pattern{
-  /*background-image: url(../img/satellite-map.png);*/
+  background-image: url(./images/satellite-map.png);
   background-size: contain;
   background-position: right center;
   opacity: 0.05;
@@ -822,7 +822,7 @@ select.form-control:not([size]):not([multiple]){
    9.0 Testimonial Section
    ========================================================================== */
 .testimonial_section{
-  /*background-image: url(../img/testimonial.jpg);*/
+  background-image: url(./images/testimonial.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0 0;
@@ -943,7 +943,7 @@ select.form-control:not([size]):not([multiple]){
    Call To Action Section
    ========================================================================== */
 .cta_section{
-  /*background-image: url(../img/cta.jpg);*/
+  background-image: url(./images/cta.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 0 0;
@@ -1623,6 +1623,10 @@ blockquote span{
 }
 .footer_widget{
   color: #fff;
+}
+.footer_widget img {
+  width: 200px;
+  align-items: center;
 }
 .footer_widget h3{
   color: #fff;

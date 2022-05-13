@@ -1,11 +1,39 @@
 import React from 'react'
 
+import Logo from '../images/logo.jpeg'
+
+import Slide1 from '../images/slide-1.jpg'
+import Slide2 from '../images/slide-2.jpg'
+import Slide3 from '../images/slide-3.jpg'
+
+import About from '../images/about-logo.png'
+import About1 from '../images/about-1.jpg'
+import About2 from '../images/about-2.jpg'
+import About3 from '../images/about-3.jpg'
+
+import Team1 from '../images/team-1.jpg'
+import Team2 from '../images/team-2.jpg'
+import Team3 from '../images/team-3.jpg'
+import Team4 from '../images/team-4.jpg'
+
+import Post1 from '../images/post-1.jpg'
+import Post2 from '../images/post-2.jpg'
+import Post3 from '../images/post-3.jpg'
+
+import Sponsor1 from '../images/sponsor-1.png'
+import Sponsor2 from '../images/sponsor-2.png'
+import Sponsor3 from '../images/sponsor-3.png'
+import Sponsor4 from '../images/sponsor-4.png'
+import Sponsor5 from '../images/sponsor-5.png'
+
+import '../App.css'
+
 export default function Home() {
     return (
         <div>
             <section className="slider_section">
                 <ul id="main-slider" className="owl-carousel main_slider">
-                    <li className="main_slide d-flex align-items-center">
+                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide1})` }} >
                         <div className="container">
                             <div className="slider_content">
                                 <h3>Its Not Just a Haircut, Its an Experience.</h3>
@@ -16,7 +44,7 @@ export default function Home() {
                             </div>
                         </div>
                     </li>
-                    <li className="main_slide d-flex align-items-center">
+                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide2})` }} >
                         <div className="container">
                             <div className="slider_content">
                                 <h3>Classic Hair Style & Shaves.</h3>
@@ -27,7 +55,7 @@ export default function Home() {
                             </div>
                         </div>
                     </li>
-                    <li className="main_slide d-flex align-items-center">
+                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide3})` }} >
                         <div className="container">
                             <div className="slider_content">
                                 <h3>Its Not Just a Haircut, Its an Experience.</h3>
@@ -49,8 +77,8 @@ export default function Home() {
                                 <h3 className="wow fadeInUp" data-wow-delay="100ms">Introducing</h3>
                                 <h2 className="wow fadeInUp" data-wow-delay="200ms">The Barber Shop <br/>Science 1991
                                 </h2>
-                                {/*<img className="wow fadeInUp" data-wow-delay="500ms" src="img/about-logo.png"*/}
-                                {/*     alt="logo" />*/}
+                                <img className="wow fadeInUp" data-wow-delay="500ms" src={About}
+                                     alt="logo" />
                                     <p className="wow fadeInUp" data-wow-delay="600ms">Barber is a person whose
                                         occupation is mainly to cut dress groom style and shave men's and boys' hair. A
                                         barber's place of work is known as a "barbershop" or a "barber's". Barbershops
@@ -62,12 +90,12 @@ export default function Home() {
                         </div>
                         <div className="col-md-6 d-none d-md-block">
                             <div className="about_img">
-                                {/*<img src="img/about-1.jpg" alt="idea-images" className="about_img_1 wow fadeInLeft"
-                                     data-wow-delay="200ms" />*/}
-                                    {/*<img src="img/about-2.jpg" alt="idea-images" className="about_img_2 wow fadeInRight"
-                                         data-wow-delay="400ms" />*/}
-                                        {/*<img src="img/about-3.jpg" alt="idea-images"
-                                             className="about_img_3 wow fadeInLeft" data-wow-delay="600ms" />*/}
+                                <img src={About1} alt="idea-images" className="about_img_1 wow fadeInLeft"
+                                     data-wow-delay="200ms" />
+                                    <img src={About2} alt="idea-images" className="about_img_2 wow fadeInRight"
+                                         data-wow-delay="400ms" />
+                                        <img src={About3} alt="idea-images"
+                                             className="about_img_3 wow fadeInLeft" data-wow-delay="600ms" />
                             </div>
                         </div>
                     </div>
@@ -92,7 +120,7 @@ export default function Home() {
                         <div className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
                             <div className="service_box">
                                 <i className="bs bs-razor-2"></i>
-                                <h3>Beard Triming</h3>
+                                <h3>Beard Trimming</h3>
                                 <p>Barber is a person whose occupation is mainly to cut dress style.</p>
                             </div>
                         </div>
@@ -155,7 +183,7 @@ export default function Home() {
                                             <option>Shaving</option>
                                             <option>Face Mask</option>
                                             <option>Hair Wash</option>
-                                            <option>Beard Triming</option>
+                                            <option>Beard Trimming</option>
                                         </select>
                                     </div>
                                     <div className="col-md-6 padding-10">
@@ -186,7 +214,7 @@ export default function Home() {
                     <ul className="team_members row">
                         <li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
                             <div className="team_member">
-                                {/*<img src="img/team-1.jpg" alt="Team Member" />*/}
+                                <img src={Team1} alt="Team Member" />
                                     <div className="overlay">
                                         <h3>Kyle Frederick</h3>
                                         <p>WEB DESIGNER</p>
@@ -195,7 +223,7 @@ export default function Home() {
                         </li>
                         <li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
                             <div className="team_member">
-                                {/*<img src="img/team-2.jpg" alt="Team Member" />*/}
+                                <img src={Team2} alt="Team Member" />
                                     <div className="overlay">
                                         <h3>José Carpio</h3>
                                         <p>WORDPRESS DEVELOPER</p>
@@ -204,7 +232,7 @@ export default function Home() {
                         </li>
                         <li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
                             <div className="team_member">
-                                {/*<img src="img/team-3.jpg" alt="Team Member" />*/}
+                                <img src={Team3} alt="Team Member" />
                                     <div className="overlay">
                                         <h3>Michel Ibáñez</h3>
                                         <p>ONLINE MARKETER</p>
@@ -213,7 +241,7 @@ export default function Home() {
                         </li>
                         <li className="col-lg-3 col-md-6 sm-padding wow fadeInUp" data-wow-delay="500ms">
                             <div className="team_member">
-                                {/*<img src="img/team-4.jpg" alt="Team Member" />*/}
+                                <img src={Team4} alt="Team Member" />
                                     <div className="overlay">
                                         <h3>Adam Castellon</h3>
                                         <p>JAVA SPECIALIST</p>
@@ -359,7 +387,7 @@ export default function Home() {
                         <div className="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="200ms">
                             <div className="blog-item">
                                 <div className="blog-thumb">
-                                    {/*<img src="img/post-1.jpg" alt="post" />*/}
+                                    <img src={Post1} alt="post" />
                                         <span className="category"><a href="#">interior</a></span>
                                 </div>
                                 <div className="blog-content">
@@ -373,7 +401,7 @@ export default function Home() {
                         <div className="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="300ms">
                             <div className="blog-item">
                                 <div className="blog-thumb">
-                                    {/*<img src="img/post-2.jpg" alt="post" />*/}
+                                    <img src={Post2} alt="post" />
                                         <span className="category"><a href="#">Architecture</a></span>
                                 </div>
                                 <div className="blog-content">
@@ -387,7 +415,7 @@ export default function Home() {
                         <div className="col-lg-4 col-md-6 sm-padding wow fadeInUp" data-wow-delay="400ms">
                             <div className="blog-item">
                                 <div className="blog-thumb">
-                                    {/*<img src="img/post-3.jpg" alt="post" />*/}
+                                    <img src={Post3} alt="post" />
                                         <span className="category"><a href="#">Design</a></span>
                                 </div>
                                 <div className="blog-content">
@@ -406,28 +434,28 @@ export default function Home() {
                 <div className="container">
                     <ul id="sponsor_carousel" className="sponsor_items owl-carousel">
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-1.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor1} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-2.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor2} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-3.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor3} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-4.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor4} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-5.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor5} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-1.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor1} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-2.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor2} alt="sponsor-image" />
                         </li>
                         <li className="sponsor_item">
-                            {/*<img src="img/sponsor-3.png" alt="sponsor-image" />*/}
+                            <img src={Sponsor3} alt="sponsor-image" />
                         </li>
                     </ul>
                 </div>
@@ -438,7 +466,7 @@ export default function Home() {
                     <div className="row">
                         <div className="col-lg-3 col-md-6 sm-padding">
                             <div className="footer_widget">
-                                {/*<img className="mb-15" src="img/logo.png" alt="Brand" />*/}
+                                <img className="mb-15" src={Logo} alt="Brand" />
                                     <p>Our barbershop is the created for men who appreciate premium quality, time and
                                         flawless look.</p>
                                     <ul className="widget_social">
@@ -452,7 +480,7 @@ export default function Home() {
                         </div>
                         <div className="col-lg-3 col-md-6 sm-padding">
                             <div className="footer_widget">
-                                <h3>Headquaters</h3>
+                                <h3>Headquarters</h3>
                                 <p>962 Fifth Avenue, 3rd Floor New York, NY10022</p>
                                 <p>Hello@dynamiclayers.net <br/>(+123) 456 789 101</p>
                             </div>
