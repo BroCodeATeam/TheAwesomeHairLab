@@ -1,10 +1,8 @@
 import React from 'react'
 
-import Logo from '../images/logo.jpeg'
+import Slider from '../components/Slider/Slider'
 
-import Slide1 from '../images/slide-1.jpg'
-import Slide2 from '../images/slide-2.jpg'
-import Slide3 from '../images/slide-3.jpg'
+import Logo from '../images/logo.jpeg'
 
 import About from '../images/about-logo.png'
 import About1 from '../images/about-1.jpg'
@@ -32,40 +30,7 @@ export default function Home() {
     return (
         <div>
             <section className="slider_section">
-                <ul id="main-slider" className="owl-carousel main_slider">
-                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide1})` }} >
-                        <div className="container">
-                            <div className="slider_content">
-                                <h3>Its Not Just a Haircut, Its an Experience.</h3>
-                                <h1>Being a barber is about <br/>taking care of the people.</h1>
-                                <p>Our barbershop is the territory created purely for males who appreciate<br/> premium quality, time and flawless look.</p>
-                                <a href="#" className="default_btn">Make Appointment</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide2})` }} >
-                        <div className="container">
-                            <div className="slider_content">
-                                <h3>Classic Hair Style & Shaves.</h3>
-                                <h1>Our hair styles<br/>enhances your smile.</h1>
-                                <p>Our barbershop is the territory created purely for males who appreciate<br/> premium
-                                    quality, time and flawless look.</p>
-                                <a href="#" className="default_btn">Make Appointment</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="main_slide d-flex align-items-center" style={{ backgroundImage: `url(${Slide3})` }} >
-                        <div className="container">
-                            <div className="slider_content">
-                                <h3>Its Not Just a Haircut, Its an Experience.</h3>
-                                <h1>Where mens want <br/>to look there very best.</h1>
-                                <p>Our barbershop is the territory created purely for males who appreciate<br/> premium
-                                    quality, time and flawless look.</p>
-                                <a href="#" className="default_btn">Make Appointment</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <Slider />
             </section>
 
             <section id="about" className="about_section bd-bottom padding">
@@ -74,15 +39,11 @@ export default function Home() {
                         <div className="col-md-6">
                             <div className="about_content align-center">
                                 <h3 className="wow fadeInUp" data-wow-delay="100ms">Introducing</h3>
-                                <h2 className="wow fadeInUp" data-wow-delay="200ms">The Barber Shop <br/>Science 1991
+                                <h2 className="wow fadeInUp" data-wow-delay="200ms">The Awesome Hair Lab <br/>Since 2020
                                 </h2>
                                 <img className="wow fadeInUp" data-wow-delay="500ms" src={About}
                                      alt="logo" />
-                                    <p className="wow fadeInUp" data-wow-delay="600ms">Barber is a person whose
-                                        occupation is mainly to cut dress groom style and shave men's and boys' hair. A
-                                        barber's place of work is known as a "barbershop" or a "barber's". Barbershops
-                                        are also places of social interaction and public discourse. In some instances,
-                                        barbershops are also public forums.</p>
+                                    <p className="wow fadeInUp" data-wow-delay="600ms">A hairstylist is a person whose occupation is to cut or style hair in order to change or maintain a person's image.<br/> This is achieved using a combination of hair coloring, haircutting, and hair texturing techniques.<br/> We take it to the next level by using only the best and healthiest products on your hair so that you<br/>leave able to live the best life possible!</p>
                                     <a href="#" className="default_btn wow fadeInUp" data-wow-delay="600ms">More About
                                         Us</a>
                             </div>
